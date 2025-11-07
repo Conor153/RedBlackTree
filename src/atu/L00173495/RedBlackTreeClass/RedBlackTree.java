@@ -1,7 +1,5 @@
 package atu.L00173495.RedBlackTreeClass;
 
-//import org.w3c.dom.Node;
-
 /**
  * This is a RedBlackTree
  * 
@@ -66,6 +64,7 @@ public class RedBlackTree<T extends Comparable<T>> {
 			if (subTreeRoot.left == null) {
 				subTreeRoot.left = node;
 				node.parent = subTreeRoot;
+				return;
 			} else { // There is a node to the left of the subTreeRoot
 				// Now our new "root" is the left subTree
 				insertRec(subTreeRoot.left, node);
@@ -522,7 +521,6 @@ public class RedBlackTree<T extends Comparable<T>> {
 		@Override
 		public String toString() {
 			return "Node [value=" + value + "] : Colour [" + nodeColourRed + "]";
-			// + Parent["+parent+"]"
 		}
 
 	}
