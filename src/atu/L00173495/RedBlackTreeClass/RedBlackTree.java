@@ -260,7 +260,7 @@ public class RedBlackTree<T extends Comparable<T>> {
 		return true;
 
 	}
-	
+
 	/**
 	 * Note: This method is called to rotate the entire tree to the left
 	 * 
@@ -318,7 +318,6 @@ public class RedBlackTree<T extends Comparable<T>> {
 		subTreeRoot.parent = pivot;
 		return pivot;
 	}
-
 
 	/**
 	 * Note: This method is called to identify if the maximum node
@@ -398,8 +397,6 @@ public class RedBlackTree<T extends Comparable<T>> {
 		}
 	}
 
-	
-
 	//////////////////////////////////////////
 
 	/**
@@ -419,7 +416,7 @@ public class RedBlackTree<T extends Comparable<T>> {
 		// start at the root and recurse
 		recPostOrderTraversal(root);
 	}
-	
+
 	/**
 	 * This allows us to recursively process the tree "in-order". Note that it is
 	 * private
@@ -499,12 +496,12 @@ public class RedBlackTree<T extends Comparable<T>> {
 
 	/////////////////////////////////////////////////////////////////
 	/**
-	 * Our Node contains a value and a reference to the left and right subtrees
-	 * also holds a reference to the parent Node and the Nodes current colour
-	 * (initially null)
+	 * Our Node contains a value and a reference to the left and right subtrees also
+	 * holds a reference to the parent Node and the Nodes current colour (initially
+	 * null)
 	 * 
-	 * Original @author dermot.hegarty 
-	 * Edits and Modifications @author Conor.Callaghan L00173495
+	 * Original @author dermot.hegarty Edits and Modifications @author
+	 * Conor.Callaghan L00173495
 	 */
 	protected class Node {
 		protected T value; // value is the actual object that we are storing
@@ -513,42 +510,62 @@ public class RedBlackTree<T extends Comparable<T>> {
 		protected Node parent; // The parent of the Node
 		protected boolean nodeColourRed; // New nodes are always red
 
+		// Constructor of Node
 		public Node(T value) {
 			this.value = value;
 			nodeColourRed = true;
 		}
-		
-		public T getValue()
-		{
+
+		/**
+		 * Note: This method is used in the Unit Test class It is used to return the
+		 * value of the node
+		 * 
+		 * @return value
+		 */
+		public T getValue() {
 			return value;
 		}
-		
-		public Node getRight()
-		{
+
+		/**
+		 * Note: This method is used in the Unit Test class It is used to return the
+		 * right child of the node
+		 * 
+		 * @return right
+		 */
+		public Node getRight() {
 			return right;
 		}
-		
-		public Node getLeft()
-		{
+
+		/**
+		 * Note: This method is used in the Unit Test class It is used to return the
+		 * left child of the node
+		 * 
+		 * @return left
+		 */
+		public Node getLeft() {
 			return left;
 		}
-		
-		public Node getParent()
-		{
-			return parent;
-		}
-		
-		public boolean getnodeColourRed()
-		{
+
+		/**
+		 * Note: This method is used in the Unit Test class It is used to return the
+		 * colour of the node
+		 * 
+		 * @return nodeColourRed
+		 */
+		public boolean getnodeColourRed() {
 			return nodeColourRed;
 		}
 
+		/**
+		 * Note: This method is used to print out the values of the tree in the order
+		 * traversals
+		 * 
+		 * @return nodeColourRed
+		 */
 		@Override
 		public String toString() {
 			return "Node [value=" + value + "] : Colour [" + nodeColourRed + "]";
 		}
-		
-		
 
 	}
 
