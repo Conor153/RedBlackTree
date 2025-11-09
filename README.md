@@ -22,6 +22,6 @@ The user can select from the dropdown what shape the nodes are to be. The option
 ---
 Tester class
 
-The user runs the JUnit Test class. The expected result is that all tests pass
+The user runs the JUnit Test class. The expected result is that all tests pass. The tests were built on the eclipse IDE.
 
 ---
