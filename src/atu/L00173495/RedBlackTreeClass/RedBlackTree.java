@@ -517,11 +517,38 @@ public class RedBlackTree<T extends Comparable<T>> {
 			this.value = value;
 			nodeColourRed = true;
 		}
+		
+		public T getValue()
+		{
+			return value;
+		}
+		
+		public Node getRight()
+		{
+			return right;
+		}
+		
+		public Node getLeft()
+		{
+			return left;
+		}
+		
+		public Node getParent()
+		{
+			return parent;
+		}
+		
+		public boolean getnodeColourRed()
+		{
+			return nodeColourRed;
+		}
 
 		@Override
 		public String toString() {
 			return "Node [value=" + value + "] : Colour [" + nodeColourRed + "]";
 		}
+		
+		
 
 	}
 
