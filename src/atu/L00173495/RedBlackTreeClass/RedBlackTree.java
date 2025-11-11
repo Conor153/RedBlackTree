@@ -557,10 +557,9 @@ public class RedBlackTree<T extends Comparable<T>> {
 		}
 
 		/**
-		 * Note: This method is used to print out the values of the tree in the order
-		 * traversals
+		 * Note: This method is used to print out the Details of the Node in String format
 		 * 
-		 * @return nodeColourRed
+		 * @return String
 		 */
 		@Override
 		public String toString() {
